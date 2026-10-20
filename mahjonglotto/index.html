@@ -68,12 +68,12 @@
 <body>
   <div class="container">
     <h1>Mahjong Lotto — Privacy Policy</h1>
-<p><strong>Effective date: October 18, 2026</strong></p>
+<p><strong>Effective date: October 20, 2026</strong></p>
 <p>CDPLUS (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) publishes the mobile app Mahjong Lotto (Android package name and iOS bundle ID: <code>com.cdplus.mahjonglotto.app</code>, the &quot;App&quot;). This Privacy Policy explains what information is processed when you use the App, who holds it, and the choices you have.</p>
 <p>This document is not legal advice. It describes the App as implemented in code.</p>
 <h2>1. Information We Collect</h2>
 <p>You can play without creating an account or signing in with your name. We do not collect your name, phone number, email address, postal address, precise GPS location, contacts, or photos as part of normal play.</p>
-<p><strong>Held only on your device (not collected by CDPLUS):</strong> lottery draw history, ticket settings, ad-frequency counters, language and appearance choices. These stay in on-device storage (SharedPreferences / local files). We do not upload them to CDPLUS servers. Uninstalling the App or clearing app data removes them from that device. Progress cannot be restored on another device unless optional cloud sync is available and already enabled for that install.</p>
+<p><strong>Held only on your device (not collected by CDPLUS):</strong> lottery draw history, ticket settings, ad-frequency counters, language and appearance choices. These stay in on-device storage (SharedPreferences / local files). We do not upload them to a CDPLUS server or any cloud backup. Uninstalling the App or clearing app data removes them from that device. Progress cannot be restored on another device.</p>
 <p><strong>Processed by Google (Google AdMob) — not stored on CDPLUS servers:</strong></p>
 <div class="table-container"><table><thead><tr>
 <th>Category</th>
@@ -101,24 +101,7 @@
 <td>Automatic with ad requests</td>
 </tr>
 </tbody></table></div>
-<p><strong>Processed by Google (Firebase) when the App is configured with Firebase — not stored on CDPLUS servers:</strong></p>
-<div class="table-container"><table><thead><tr>
-<th>Category</th>
-<th>Data</th>
-<th>Notes</th>
-</tr></thead><tbody>
-<tr>
-<td>Anonymous account</td>
-<td>Firebase Authentication anonymous user ID</td>
-<td>Created only when Firebase initializes successfully</td>
-</tr>
-<tr>
-<td>Synced draws</td>
-<td>Draw seed and numbers stored under <code>users/{uid}/draws/{seed}</code></td>
-<td>Optional cloud backup of draws</td>
-</tr>
-</tbody></table></div>
-<p>The App’s source includes Firebase Analytics and Crashlytics packages, but the App does not call Analytics events or Crashlytics APIs. Payment card details are not collected; the App has no in-app purchases. There is no separate EEA/UK/Switzerland in-app consent dialog beyond platform controls.</p>
+<p>The App does not use Firebase Authentication, Cloud Firestore, Analytics, or Crashlytics. There is no account, no server, and no cloud backup of draws. Payment card details are not collected; the App has no in-app purchases. There is no separate EEA/UK/Switzerland in-app consent dialog beyond platform controls.</p>
 <h2>2. How We Use Information</h2>
 <div class="table-container"><table><thead><tr>
 <th>Purpose</th>
@@ -131,10 +114,6 @@
 <tr>
 <td>Showing interstitial ads</td>
 <td>Advertising and device identifiers, usage signals, IP (via AdMob)</td>
-</tr>
-<tr>
-<td>Optional cloud sync of draws</td>
-<td>Anonymous Firebase UID and draw records (via Firestore)</td>
 </tr>
 <tr>
 <td>Answering support email you send us</td>
@@ -156,10 +135,6 @@
 <td>Per Google AdMob / partner policies</td>
 </tr>
 <tr>
-<td>Firebase Auth / Firestore draws</td>
-<td>Per Google Firebase retention while the Firebase project exists</td>
-</tr>
-<tr>
 <td>Support emails (if you write to us)</td>
 <td>Up to 1 year after resolution; up to 3 years if the message is a complaint or dispute record required by Korean law</td>
 </tr>
@@ -173,10 +148,6 @@
 <td>Google LLC (AdMob)</td>
 <td>Ad serving and measurement</td>
 </tr>
-<tr>
-<td>Google LLC (Firebase Auth, Cloud Firestore)</td>
-<td>Optional anonymous auth and draw sync when configured</td>
-</tr>
 </tbody></table></div>
 <p>Policy: Google — https://policies.google.com/privacy</p>
 <h2>5. Sharing With Third Parties</h2>
@@ -184,11 +155,10 @@
 <p>Advertising identifiers and related signals may be shared with Google AdMob and advertising partners that serve ads through AdMob when personalized ads are allowed (for example, after you allow tracking on iOS, or while an Android Advertising ID is available). Under some privacy laws this can count as “sharing” for cross-context advertising.</p>
 <p>We may disclose information if required by law.</p>
 <h2>6. International Transfers</h2>
-<p>Google operates infrastructure outside Korea. Device identifiers, ad-related data, and (when Firebase is configured) anonymous account and draw records may be processed in the United States and other countries where Google runs data centers. Game progress kept only on your device is not transferred by us. Support email may be stored in the mailbox that receives it.</p>
+<p>Google operates infrastructure outside Korea. Device identifiers and ad-related data may be processed in the United States and other countries where Google runs data centers. Game progress kept only on your device is not transferred by us. Support email may be stored in the mailbox that receives it.</p>
 <h2>7. Deletion</h2>
 <ul>
-<li>Device data: uninstall the App or clear app data in system settings. We do not keep a server copy of device-only settings.</li>
-<li>Firebase draws (when sync is active): removing the App does not by itself erase Google-held documents; there is no in-App delete-all-cloud button. Contact support if you need help with a synced anonymous account.</li>
+<li>Device data: uninstall the App or clear app data in system settings. We do not keep a server or cloud copy of device-only settings.</li>
 <li>Advertising records: held by Google under their retention cycles. CDPLUS does not have a process to locate and delete those records for a specific user from an email alone.</li>
 <li>Support email: you may ask us to delete messages we hold at the contact address below.</li>
 </ul>
@@ -210,7 +180,6 @@
 <ul>
 <li>Support email: legitimate interest in answering you; legal obligation only where a complaint record must be kept.</li>
 <li>Device identifiers, ad-related data, IP processed via Google: legitimate interests in operating a free ad-supported App. CDPLUS does not keep these records per user on its own servers.</li>
-<li>Optional Firebase Auth / Firestore: legitimate interests in syncing draws when Firebase is configured.</li>
 <li>iOS IDFA: consent via ATT when you allow tracking.</li>
 <li>Android Advertising ID: used by AdMob while available on the device; no separate in-app consent dialog.</li>
 <li>We do not rely on “contract performance” for processing personal data to run the game, because game progress on device is not collected by us as a personal profile.</li>
@@ -222,9 +191,9 @@
 <h2>13. Security</h2>
 <ul>
 <li>Network traffic uses TLS.</li>
-<li>Game progress stays on the device unless optional Firebase sync is active.</li>
+<li>Game progress stays on the device. There is no cloud backup.</li>
 <li>We do not store card numbers.</li>
-<li>We do not operate a user personal-data database of our own. The AdMob and Firebase consoles are accessed with Google accounts.</li>
+<li>We do not operate a user personal-data database of our own. The AdMob console is accessed with a Google account.</li>
 </ul>
 <h2>14. Contact</h2>
 <ul>
@@ -235,7 +204,8 @@
 <h2>15. Changes</h2>
 <p>We may update this policy when the App or the law changes. Material changes will be noted with a new effective date in this document.</p>
 <ul>
-<li>First published and effective: October 18, 2026</li>
+<li>First published: October 18, 2026</li>
+<li>Updated: October 20, 2026 (removed cloud backup and Firebase sync; draws stay on the device only)</li>
 </ul>
     <div class="footer">
       Privacy Policy Document &middot; Deployed via GitHub Pages
