@@ -68,7 +68,7 @@
 <body>
   <div class="container">
     <h1>Privacy Policy</h1>
-<p><strong>Effective Date</strong>: October 17, 2026</p>
+<p><strong>Effective Date</strong>: October 28, 2026</p>
 <p><strong>Applicable Application</strong>: BubbleLotto (Android Package: <code>com.cdplus.bubblelotto.app</code>, iOS Bundle ID: <code>com.cdplus.bubblelotto.app</code>)</p>
 <p><strong>Developer</strong>: CDPLUS (<code>oojoo50@gmail.com</code>)</p>
 <p>CDPLUS (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) respects your privacy and is committed to protecting it in compliance with applicable data protection laws including GDPR and CCPA. This Privacy Policy explains our practices regarding data handling in the BubbleLotto mobile application (&quot;the App&quot;).</p>
@@ -79,65 +79,79 @@
 <li><strong>Local Device Storage</strong>:</li>
 <li>Gameplay progress, high scores, generated number archives, and user settings.</li>
 <li>Stored locally using SQLite (<code>sqflite</code>) and device preferences (<code>shared_preferences</code>).</li>
-<li><strong>No Server-Side Collection</strong>:</li>
-<li>We do not operate external member databases, account systems, or remote servers.</li>
-<li>We do not collect, transmit, or store any personal data on developer servers.</li>
-<li>The App contains no advertising or analytics SDKs (such as Google Mobile Ads or Firebase Analytics).</li>
-<li><strong>Information Not Collected</strong>:</li>
+<li><strong>No developer server</strong>:</li>
+<li>We do not operate accounts or a backend. Game progress and number records are not sent to developer servers.</li>
+<li>Ads are served by Google Mobile Ads (AdMob). An advertising identifier (IDFA or GAID), IP address, app interactions, and diagnostics may be sent to Google. We do not store that data.</li>
+<li>The App does not use Firebase Analytics or a crash-reporting SDK.</li>
+<li><strong>In-app purchase</strong>:</li>
+<li>Remove Ads is a non-consumable product sold by Apple App Store or Google Play. The store processes the payment. The receipt is not sent to us.</li>
+<li>This device only stores a local flag that ads were removed. Restoring purchases restores that entitlement. It does not restore game progress from another device.</li>
+<li><strong>Information we do not collect</strong>:</li>
 <li>Names, email addresses, phone numbers, or government IDs.</li>
-<li>Device location, contacts, photos, camera, or microphone data.</li>
-<li>Advertising identifiers (IDFA, GAID).</li>
+<li>GPS location, contacts, photos, camera, or microphone data.</li>
+<li>Purchase analytics events.</li>
 </ul>
 <h2>2. Purpose of Use</h2>
 <p>All data handled by the App is used exclusively on your local device to:</p>
 <ul>
-<li>Save and restore puzzle sessions and high scores.</li>
+<li>Save and restore puzzle sessions and high scores. We do not collect that progress.</li>
 <li>Store customized lottery number sets and favorite rules.</li>
-<li>Retain user preferences such as sound effects, haptic feedback, reduced motion, and language settings.</li>
+<li>Retain preferences such as sound, haptics, reduced motion, and language.</li>
+<li>Show ads that support free play. After Remove Ads is purchased, the App does not request full-screen ads.</li>
 </ul>
 <h2>3. Data Retention and Deletion</h2>
 <ul>
-<li>All data resides strictly on your local device.</li>
-<li>Data is retained until you uninstall the App or clear application data via device system settings. Deletion permanently removes all stored data.</li>
+<li>Game progress and the ad-removal flag stay on your device. Uninstalling the App or clearing its data removes them from that device.</li>
+<li>Advertising identifiers and diagnostics are not held by us. Google keeps them for its own retention period.</li>
 </ul>
 <h2>4. Entrustment of Data Processing</h2>
-<p>We do not entrust personal data processing to any third-party processors.</p>
+<p>We do not outsource game progress. Google (AdMob) processes ad requests. Apple or Google processes the in-app payment in its own billing service.</p>
 <h2>5. Third-Party Disclosures</h2>
-<p>We do not sell, rent, or share personal information with third parties. When you explicitly use the &quot;Share&quot; or &quot;Export&quot; functions within the App, data is shared only with the external destination you select (such as a messaging app or email client).</p>
+<p>We do not sell personal information. When you explicitly use Share or Export, data goes only to the app you choose. If you allow tracking on iOS, or the Android advertising ID is on, that identifier may be shared with ad partners for interest-based ads. The App has no separate consent dialog. We do not keep a per-user sale or sharing list.</p>
 <h2>6. Cross-Border Data Transfers</h2>
-<p>We do not collect or transfer personal data across borders.</p>
+<p>Game progress and the ad-removal entitlement do not pass through our servers and are not transferred abroad by us. Advertising identifiers, IP addresses, and diagnostics processed by AdMob may be sent to Google. Inquiry email may be stored in the inbox that receives it.</p>
 <h2>7. Data Destruction Procedures</h2>
 <ul>
-<li><strong>Procedure</strong>: Stored game data is destroyed immediately when the App is uninstalled or when you clear data via device settings.</li>
-<li><strong>Method</strong>: Local database and preference files are permanently deleted by the operating system.</li>
+<li><strong>Procedure</strong>: Game data and the ad-removal flag disappear from a device when you uninstall the App or clear its data. The only records we can delete are inquiry emails.</li>
+<li><strong>Method</strong>: We do not hold analytics or ad logs. Google deletes them on its own schedule. We cannot find Google&#x27;s per-person records from an email address, device model, or app version.</li>
 </ul>
-<h2>8. Advertising and Tracking (No Ads)</h2>
+<h2>8. Advertising and Tracking</h2>
 <ul>
-<li>The App contains no advertisements and does not display tailored or generic advertisements.</li>
-<li>The App does not request or use Apple&#x27;s App Tracking Transparency (ATT) framework or Android Advertising ID.</li>
+<li>A full-screen ad can appear each time a bubble round ends. The screen that reveals a batch of number sets does not add another ad.</li>
+<li>Buying Remove Ads in Settings stops ad requests.</li>
+<li>On iOS the system tracking prompt (ATT) may appear. You can keep playing if you decline, and you can change it later in Settings.</li>
+<li>On Android, delete or reset the advertising ID in device settings.</li>
+<li>There is no in-app consent dialog. Turning the advertising identifier off does not hide ads unless you buy Remove Ads.</li>
+<li>The App does not ask your age and does not set child-directed treatment.</li>
 </ul>
 <h2>9. User Rights and How to Exercise Them</h2>
 <ul>
-<li>You have full control over your data directly on your device.</li>
-<li>You can reset preferences or delete saved number archives within the App, or uninstall the App to erase all records.</li>
-<li>Because no personal data is transmitted to our servers, there are no remote records to delete. For general inquiries, you can reach us at <code>oojoo50@gmail.com</code>.</li>
+<li>You can review or delete records on the device.</li>
+<li>Uninstalling the App or clearing its data removes game data and the ad-removal flag from that device. Restore Purchases applies the ad-removal entitlement again.</li>
+<li>We cannot locate and delete Google&#x27;s analytics or ad records for you. Limit them in device settings: turn tracking off on iOS, or delete or reset the advertising ID on Android.</li>
+<li>Contact <code>oojoo50@gmail.com</code>. A deletion request covers inquiry email we hold, not ad logs held by Google.</li>
 </ul>
 <h2>10. Legal Basis for Processing (GDPR)</h2>
 <ul>
-<li>We do not process personal data on external servers. Local storage on your device is conducted solely to perform the core gameplay features requested by the user (performance of a contract).</li>
+<li>On-device game storage is how the App provides the play you asked for. We do not process progress on a server.</li>
+<li>Advertising identifiers, usage data, and IP addresses support the legitimate interest of running a free app with ads. Google holds them. We do not keep them per user.</li>
+<li>The iOS advertising identifier is collected only if you allow tracking in ATT. If you decline, it is not collected.</li>
+<li>The Android advertising identifier is used by AdMob while the device advertising ID is on. There is no separate consent dialog. You can turn it off in device settings.</li>
 </ul>
 <h2>11. Children&#x27;s Privacy</h2>
 <ul>
-<li>The App is suitable for general audiences and does not knowingly collect personal information from children under the age of 13 (or applicable local age thresholds).</li>
+<li>The App is not directed at children as its primary audience. There is no age check, so children are not distinguished from other users.</li>
+<li>A parent can ask us to delete inquiry email we hold. We do not delete analytics or ad records per a child&#x27;s device.</li>
 </ul>
 <h2>12. Automated Collection and Cookies</h2>
 <ul>
-<li>The App does not use browser cookies, tracking beacons, or online behavioral analytics.</li>
+<li>The App does not use browser cookies or web beacons.</li>
+<li>AdMob may send identifiers and diagnostics with an ad request. Google may use the IP address to estimate a coarse region.</li>
 </ul>
 <h2>13. Security Safeguards</h2>
 <ul>
-<li>No personal data is transmitted over public networks.</li>
-<li>All local data is isolated within the operating system&#x27;s standard application sandbox.</li>
+<li>Game progress and the ad-removal flag stay in the operating system sandbox.</li>
+<li>Ad requests are sent to Google. We do not keep a copy on our servers.</li>
 </ul>
 <h2>14. Contact Information</h2>
 <ul>
